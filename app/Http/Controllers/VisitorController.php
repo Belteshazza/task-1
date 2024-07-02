@@ -28,7 +28,7 @@ class VisitorController extends Controller
         }
 
         $weathResponse = Http::get("http://api.weatherapi.com/v1/current.json", [
-            'key' => env('WEATHER_API_KEY'),
+            'key' => 'c871a5ce62624d7d800113441240207',
             'q' => $loc,
             'aqi' => 'no',
         ]);
